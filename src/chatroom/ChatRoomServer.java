@@ -1,6 +1,5 @@
 package chatroom;
 
-
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -36,10 +35,6 @@ public class ChatRoomServer {
 			ChatRoomThread crt = new ChatRoomThread (clientSocket,cr);
 			Thread t = new Thread(crt);
 			t.start();
-			
-			server.close();
 		}
-		
 	}
 }
-
