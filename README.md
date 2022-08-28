@@ -30,11 +30,13 @@ Use Eclipse to clone the repository and run program to establish test connection
 Use Telnet as client to connect to server.
 
 1. Install [Eclipse IDE](http://www.eclipse.org/downloads/).
-2. Open Eclipse. Create a new workspace.
-3. Open **Window** > **Show View** > **Other** > **Git** > **Git Repositories**
-4. Click on **Clone a Git repository**
-5. Enter the URI ``https://github.com/LeanetAlfonso/ChatRoomServer.git`` and click **Next**.
-6. In the Branch Selection window, select main and click **Next**.
-7. In the Local Destination window, enter a directory and select **Finish**.
-8. Run *ChatRoomServer.Java*
-9. Type ``telnet localhost 3333`` at the command line to connect to the chatroom server (you must [install Telnet](https://www.layerstack.com/resources/tutorials/Installing-telnet-on-Linux-and-Windows-Cloud-Servers) before you can run this command). Run the command from different windows to simulate multiple client connections.
+2. Open Eclipse and go to **File** > **Import...**
+3. In the *Import* window, select **Git** > **Projects from Git** and click **Next**.
+4. In the *Select Repository Source* window, select **Clone URI** and click **Next**.
+5. In the *Source Git Repository* window, enter the URI ``https://github.com/LeanetAlfonso/ChatRoomServer.git`` and click **Next**.
+6. In the *Branch Selection* window, select *main* and click **Next**.
+7. In the *Local Destination* window, enter a local directory and click **Next**.
+8. In the *Select a Wizard to use for importing projects* window, select **Import existing Eclipse projects** and click **Next**.
+9. In the *Import Projects* window, select the project and click **Finish**.
+10. Run *ChatRoomServer.Java*
+11. Type ``telnet localhost 3333`` at the command line to connect to the chatroom server (you must [install Telnet](https://www.layerstack.com/resources/tutorials/Installing-telnet-on-Linux-and-Windows-Cloud-Servers) before you can run this command). Run the command from different windows to simulate multiple client connections.
