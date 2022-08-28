@@ -20,8 +20,16 @@ The purpose of this assignment was to learn about multi-threading and networking
 | Any other input line after joining chatroom **message** | Chat message | <ul><li>Broadcast message to all chatroom participants in the form of “[**u**]: [**message**]”</li></ul> |
 
 
-[//]: # (Snapshots)
+## Snapshots
 
+#### Client A
+<img alt="client-a" src="images/client-a.png" width="600" height="auto"/>
+
+#### Client B
+<img alt="client-b" src="images/client-b.png" width="600" height="auto"/>
+
+#### Client C
+<img alt="client-c" src="images/client-c.png" width="600" height="auto"/>
 
 ## Running Locally (Manual Setup)
 
