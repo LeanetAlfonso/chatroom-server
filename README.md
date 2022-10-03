@@ -8,17 +8,16 @@ The purpose of this assignment was to learn about multi-threading and networking
 
 ## Protocol for client-server communication
 
-| Client Request  | Server Response |       Meaning      |
-| ------------- | ------------- | :---------- |
-| Join chatroom with valid ID/Username **u** | Welcome message | <ul><li>Add client to chat room</li><li>Broadcast message to all chat room participants indicating client *joined* the chat room</li></ul>  |
-| COMMANDS | List of commands | <ul><li>Display private message to client listing all commands</li></ul>|
+|              Client Request                | Server Response |                                         Meaning                                  |
+|              --------------                | --------------- |                                         -------                                  |
+| Join chatroom with valid ID/Username **u** | Welcome message |  <ul><li>Add client to chat room</li><li>Broadcast message to all chat room participants indicating client *joined* the chat room</li></ul> |
+| COMMANDS | List of commands | <ul><li>Display private message to client listing all commands</li></ul> |
 | LISTALL | List of current participants | <ul><li>Display private message to client listing all current participants in the chat room (including itself)</li></ul> |
 | COUNTALL | Number of current participants | <ul><li>Display private message to client  indicating the current number of participants in the chat room (including itself)</li></ul> |
 | WHOAMI | Current username | <ul><li>Display private message to client with its current username</li></ul> |
 | EDITUSER **u** | Username change confirmation message | <ul><li>Validate **u** (no two clients with the same username in a chatroom)</li><li>Change client's username to **u**</li><li>Display private message to client confirming username change</li></ul> |
 | EXIT | Exit message | <ul><li>Remove client from chat room</li><li>Broadcast message to all chat room participants indicating client *left* the chat room</li><li>Quit the connection</li></ul> |
 | Any other input line after joining chatroom **message** | Chat message | <ul><li>Broadcast message to all chatroom participants in the form of “[**u**]: [**message**]”</li></ul> |
-
 
 ## Snapshots
 
